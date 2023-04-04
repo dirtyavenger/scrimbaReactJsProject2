@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "parcel": "^2.8.3",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "process": "^0.11.10"
   },
   "scripts": {
@@ -22,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/dirtyavenger/scrimbaReactJsProject2/issues"
   },
-  "homepage": "https://github.com/dirtyavenger/scrimbaReactJsProject2#readme"
+  "homepage": "https://github.com/dirtyavenger/scrimbaReactJsProject2#readme",
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "static",
+        "staticOutDir": "static/"
+      }
+    ]
+  }
 }
