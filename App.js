@@ -14,12 +14,15 @@ export default function App() {
   const cards = data.map((cardData) => {
     return (
       <Card
-        image={`../static/${cardData.coverImg}`}
-        rating={cardData.stats.rating}
-        reviewCount={cardData.stats.reviewCount}
-        country={cardData.location}
-        title={cardData.title}
-        price={cardData.price}
+        key={cardData.id}
+        item={cardData}
+        // image={`../static/${cardData.coverImg}`}
+        // rating={cardData.stats.rating}
+        // reviewCount={cardData.stats.reviewCount}
+        // location={cardData.location}
+        // title={cardData.title}
+        // price={cardData.price}
+        // openSpots={cardData.openSpots}
       />
     );
   });
@@ -28,7 +31,7 @@ export default function App() {
     <div>
       <Navbar />
       <Hero />
-      {cards}
+      <section className="cards-list">{cards}</section>
     </div>
   );
 }
